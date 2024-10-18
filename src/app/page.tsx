@@ -3,13 +3,10 @@
 import React from 'react';
 import Hero from '@/components/hero';
 import Features from '@/components/Features';
-import TargetAudience from '@/components/TargetAudience';
-import GlobalReach from '@/components/GlobalReach';
-import AvailableCryptos from '@/components/AvailableCryptos';
-// import Benefits from '@/components/Benefits';
+import CoreFeatures from '@/components/CoreFeatures';
+import Team from '@/components/Team';
 import DeveloperSection from '@/components/DeveloperSection';
 import Testimonials from '@/components/Testimonials';
-import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
 import FAQ from '@/components/FAQ';
 import ContactUs from '@/components/ContactUs';
@@ -21,13 +18,10 @@ export default function Home() {
       <Hero />
       <Brands />
       <Features />
-      <TargetAudience />
-      <GlobalReach />
-      <AvailableCryptos />
-      {/* <Benefits /> */}
+      <CoreFeatures />
+      <Team />
       <DeveloperSection />
       <Testimonials />
-      <CallToAction />
       <FAQ />
       <ContactUs />
       <Footer />
