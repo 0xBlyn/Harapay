@@ -38,7 +38,7 @@ const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="flex items-center space-x-2">
-              <Image src="/images/logo.png" alt="Harapay Logo" width={32} height={32} />
+            <Image src="/images/logo.png" alt="Harapay Logo" width={32} height={32} />
               <span className="text-xl font-bold text-brand">Harapay</span>
             </Link>
             

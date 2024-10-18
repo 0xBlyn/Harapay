@@ -1,0 +1,41 @@
+.brands {
+  padding-bottom: 5%;
+  overflow: hidden;
+  width: 100%;
+}
+
+.brand_logos {
+  padding-top: 3%;
+  overflow: hidden;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+}
+
+.head h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.image_container {
+  display: flex;
+  animation: scroll 20s linear infinite;
+  align-items: center;
+}
+
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+}
+
+.logo_wrapper {
+  flex: 0 0 auto;
+  width: 150px;
+  margin-right: 20px;
+}

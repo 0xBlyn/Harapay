@@ -13,13 +13,13 @@ import CallToAction from '@/components/CallToAction';
 import Footer from '@/components/Footer';
 import FAQ from '@/components/FAQ';
 import ContactUs from '@/components/ContactUs';
-import { BlockchainLogos } from '@/components/BlockchainLogos';
+import Brands from '@/components/Brands';
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <BlockchainLogos />
+      <Brands />
       <Features />
       <TargetAudience />
       <GlobalReach />
