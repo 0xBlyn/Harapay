@@ -1,0 +1,26 @@
+.glowEffect {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.glowEffect::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 70%);
+  border-radius: 50%;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.glowEffect:hover::before {
+  opacity: 1;
+}
+
+.glowEffect:hover {
+  transform: scale(1.05);
+}

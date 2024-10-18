@@ -1,0 +1,296 @@
+.contactSection {
+    background-color: #000;
+    color: #fff;
+    padding: 4rem 1rem;
+    position: relative;
+    overflow: hidden;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+  }
+  
+  .container {
+    max-width: 64rem;
+    margin: 0 auto;
+  }
+  
+  .ctaContainer {
+    position: relative;
+    border-radius: 1rem;
+    padding: 2% 1rem;
+  }
+  
+  .ctaInner {
+    position: relative;
+    z-index: 10;
+    text-align: center;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .subtitle {
+    color: #a0aec0;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+  }
+  
+  .ctaButton {
+    display: inline-block;
+    background-color: #9E1F64;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 0.875rem;
+  }
+  
+  .ctaButton:hover {
+    background-color: #7a1850;
+  }
+  
+  .lineHorizontalWrap {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+  }
+  
+  .lineHorizontalWrap.top {
+    top: 0;
+  }
+  
+  .lineHorizontalWrap.bottom {
+    bottom: 0;
+  }
+  
+  .horizontalLine {
+    position: absolute;
+    height: 1px;
+    background-color: rgba(158, 31, 100, 0.3);
+  }
+  
+  .hLeft, .hRight {
+    width: calc(50% - 1rem);
+  }
+  
+  .hLeft {
+    left: 0;
+  }
+  
+  .hRight {
+    right: 0;
+  }
+  
+  .hExtLeft, .hExtRight {
+    width: 25%;
+    opacity: 0.7;
+  }
+  
+  .hExtLeft {
+    left: -25%;
+    background: linear-gradient(to right, transparent, rgba(158, 31, 100, 0.3));
+  }
+  
+  .hExtRight {
+    right: -25%;
+    background: linear-gradient(to left, transparent, rgba(158, 31, 100, 0.3));
+  }
+  
+  .dot {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: rgba(158, 31, 100, 0.5);
+    top: -3px;
+  }
+  
+  .isLeft {
+    left: 0;
+  }
+  
+  .isRight {
+    right: 0;
+  }
+  
+  .isCenter {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .verticalLine {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+  }
+  
+  .ctaLineMovingLeft, .ctaLineMovingRight {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #9E1F64, transparent);
+    animation: moveVertical 3s linear infinite;
+  }
+  
+  .blur {
+    filter: blur(3px);
+  }
+  
+  .lineExtremityWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .topLeft, .topRight, .topCenter, .bottomLeft, .bottomRight, .bottomCenter {
+    position: absolute;
+    width: 2px;
+    height: 2rem;
+    background: linear-gradient(to bottom, rgba(158, 31, 100, 0.3), transparent);
+  }
+  
+  .bottomLeft, .bottomRight, .bottomCenter {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(158, 31, 100, 0.3), transparent);
+  }
+  
+  .topLeft, .bottomLeft {
+    left: 0;
+  }
+  
+  .topRight, .bottomRight {
+    right: 0;
+  }
+  
+  .topCenter, .bottomCenter {
+    left: 50%;
+  }
+  
+  .ctaShape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .ctaCircle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 1px solid rgba(158, 31, 100, 0.3);
+    animation: rotate 20s linear infinite;
+  }
+  
+  .ctaShapeInner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .ctaShapeItem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .onrampDotWrap {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .ctaShapeItemAnimation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px solid rgba(158, 31, 100, 0.3);
+    border-radius: 50%;
+    animation: pulse 2s ease-out infinite;
+  }
+  
+  .leftToRight .horizontalLine {
+    animation: moveHorizontalLeftToRight 3s linear infinite;
+  }
+  
+  .rightToLeft .horizontalLine {
+    animation: moveHorizontalRightToLeft 3s linear infinite;
+  }
+  
+  @keyframes moveVertical {
+    0% { transform: translateY(-100%); }
+    100% { transform: translateY(100%); }
+  }
+  
+  @keyframes moveHorizontalLeftToRight {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  @keyframes moveHorizontalRightToLeft {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  @keyframes rotate {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(0.95); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.5; }
+    100% { transform: scale(0.95); opacity: 1; }
+  }
+  
+  @media (min-width: 640px) {
+    .contactSection {
+      padding: 6rem 2rem;
+    }
+    
+    .ctaContainer {
+      padding: 6rem 2rem;
+    }
+    
+    .title {
+      font-size: 2rem;
+    }
+    
+    .subtitle {
+      font-size: 1.25rem;
+    }
+    
+    .ctaButton {
+      padding: 1rem 2rem;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .contactSection {
+      padding: 8rem 2rem;
+    }
+    
+    .ctaContainer {
+      padding: 8rem 4rem;
+    }
+    
+    .title {
+      font-size: 2.5rem;
+    }
+    
+    .subtitle {
+      font-size: 1.5rem;
+    }
+  }
