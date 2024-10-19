@@ -1,23 +1,33 @@
 import React from 'react';
-import { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { GeistSans } from 'geist/font/sans';
 import { GeistMono } from 'geist/font/mono';
 import '@/app/globals.css';
 
+import ClientLayout from './client-layout';
+
 export const metadata: Metadata = {
   title: 'Harapay',
-  description: 'Accept payments by cards, receive them in cryptocurrency',
+  description: 'Bridging The Gap Between Blockchain and Traditional Services in Africa',
   icons: {
-    icon: '/logo.png',
+    icon: '/logo.ico',
+    apple: '/logo.ico',
   },
 };
-
-import ClientLayout from './client-layout';
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode
 }) {
-  return <ClientLayout>{children}</ClientLayout>;
+  return (
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <head>
+        <link rel="icon" href="/logo.ico" sizes="any" />
+      </head>
+      <body>
+        <ClientLayout>{children}</ClientLayout>
+      </body>
+    </html>
+  );
 }

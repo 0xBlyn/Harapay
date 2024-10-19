@@ -5,7 +5,6 @@ import Hero from '@/components/hero';
 import Features from '@/components/Features';
 import CoreFeatures from '@/components/CoreFeatures';
 import Team from '@/components/Team';
-import DeveloperSection from '@/components/DeveloperSection';
 import Testimonials from '@/components/Testimonials';
 import Footer from '@/components/Footer';
 import FAQ from '@/components/FAQ';
@@ -20,7 +19,6 @@ export default function Home() {
       <Features />
       <CoreFeatures />
       <Team />
-      <DeveloperSection />
       <Testimonials />
       <FAQ />
       <ContactUs />
