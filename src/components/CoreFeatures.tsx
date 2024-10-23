@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme } from "next-themes";
 import { MagicCard } from "@/components/ui/magic-card";
+import Image from 'next/image';
 
 const audiences = [
   { title: 'Wallet', description: 'A USSD-based Crypto wallet management system which enables token transactions.' },
@@ -17,20 +18,30 @@ const CoreFeatures: React.FC = () => {
   return (
     <section className={`py-16 ${theme === 'dark' ? 'bg-gray-900' : 'bg-white'}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-5xl font-bold text-center mb-2">
-          Our Core Features
+        <h2 className="text-4xl font-bold text-center mb-2">
+          The Complete Solutions
         </h2>
-        <p className="text-center overflow-hidden text-xl text-gray-400 dark:text-gray-300 mb-12">What we are offering?</p>
+        <p className="text-center text-gray-500 dark:text-gray-400 mb-12">Ligula risus auctor tempus magna feugiat lacinia fusce blandit</p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {audiences.map((audience, index) => (
             <MagicCard
               key={index}
-              className="h-full min-h-[11rem] transition-all duration-300 hover:shadow-xl"
+              className="h-full transition-all duration-300 hover:shadow-xl"
               gradientColor={theme === "dark" ? "#262626" : "#D9D9D955"}
             >
               <div className="p-6 flex flex-col h-full">
-                <h3 className="text-xl font-semibold mb-2">{audience.title}</h3>
-                <p className="text-gray-600 dark:text-gray-300 flex-grow">{audience.description}</p>
+                <div className="flex items-center mb-4">
+                  <div className="w-12 h-12 mr-4 flex-shrink-0">
+                    <Image
+                      src={`/path/to/${audience.title.toLowerCase()}-icon.svg`}
+                      alt={`${audience.title} icon`}
+                      width={48}
+                      height={48}
+                    />
+                  </div>
+                  <h3 className="text-xl font-semibold">{audience.title}</h3>
+                </div>
+                <p className="text-gray-600 dark:text-gray-300">{audience.description}</p>
               </div>
             </MagicCard>
           ))}

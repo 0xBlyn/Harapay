@@ -4,7 +4,7 @@ import styles from '@/styles/Features.module.css';
 
 const Features: React.FC = () => {
   return (
-    <div className='px-[13%] flex justify-between items-center bg-[#f9fafb] py-[5%] rounded-[50px]'>
+    <div className='px-[16%] flex justify-between items-center bg-[#f9fafb] py-[5%] rounded-[50px]'>
       <div className={styles.product_container}>
       <div className={styles.product}>
         <div>
