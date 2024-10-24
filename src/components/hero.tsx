@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
-    <section className="text-gray-900 py-5 min-h-screen relative overflow-hidden">
+    <section className="text-gray-900 px-[5%] py-5 min-h-screen relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <motion.div 
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
             </div>
           </motion.div>
           <motion.div 
-            className=" relative w-full lg:w-[50vw] h-[calc(100vh-80px)] overflow-hidden"
+            className=" relative w-full lg:w-[40vw] h-[calc(100vh-80px)] overflow-hidden"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}

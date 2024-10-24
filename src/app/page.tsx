@@ -11,6 +11,8 @@ import FAQ from '@/components/FAQ';
 import ContactUs from '@/components/ContactUs';
 import Brands from '@/components/Brands';
 import Highlights from '@/components/Highlights';
+import Mission from '@/components/Mission';
+
 export default function Home() {
   return (
     <main>
@@ -19,7 +21,8 @@ export default function Home() {
       <Features />
       <CoreFeatures />
       <Highlights />
-      {/* <Team /> */}
+      <Mission />
+      <Team />
       <Testimonials />
       <FAQ />
       <ContactUs />

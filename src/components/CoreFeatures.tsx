@@ -20,7 +20,7 @@ const audiences = [
     icon: 'mdi:shield-lock-outline'
   },
   { 
-    title: 'Security and Lower Transaction Fees', 
+    title: 'Security & Lower Transaction Fees', 
     description: 'Complete your transactions safely and enjoy low fees while doing it.',
     icon: 'mdi:security'
   },
@@ -54,15 +54,15 @@ const CoreFeatures: React.FC = () => {
               gradientColor={theme === "dark" ? "#262626" : "#ffffff"}
             >
               <div className="p-4 flex flex-col h-full">
-                <div className="flex items-center mb-3">
+                <div className="flex items-center">
                   <Icon 
                     icon={audience.icon} 
-                    width="80" 
-                    height="80" 
+                    width="60" 
+                    height="60" 
                     color="#9E1F64"
                     className="mr-3"
                   />
-                  <h3 className="text-lg font-semibold">{audience.title} <br/><p className="text-gray-600 font-normal dark:text-gray-300 text-sm">{audience.description}</p></h3>
+                  <h3 className="text-base font-semibold">{audience.title} <br/><p className="text-gray-600 font-normal dark:text-gray-300 text-sm">{audience.description}</p></h3>
                 </div>
                 
               </div>
