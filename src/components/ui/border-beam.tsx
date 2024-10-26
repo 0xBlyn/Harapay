@@ -1,10 +1,8 @@
 import React from 'react';
 import { cn } from "@/lib/utils";
 
-// Interface for BorderBeam props, currently extends HTMLDivElement attributes
-export interface BorderBeamProps extends React.HTMLAttributes<HTMLDivElement> {}
-
-export const BorderBeam = React.forwardRef<HTMLDivElement, BorderBeamProps>(
+// Remove the BorderBeamProps interface and use HTMLDivElement attributes directly
+export const BorderBeam = React.forwardRef<HTMLDivElement, React.HTMLAttributes<HTMLDivElement>>(
   ({ className, ...props }, ref) => {
     return (
       <div

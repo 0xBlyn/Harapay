@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { Video } from 'lucide-react';
 import { TwitterLogoIcon } from '@radix-ui/react-icons';
