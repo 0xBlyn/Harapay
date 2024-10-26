@@ -2,7 +2,8 @@ import React from 'react'
 import Image from 'next/image'
 import Particles from '@/components/ui/particles'
 
-type Props = {}
+// Define Props as Record<string, unknown>
+type Props = Record<string, unknown>;
 
 function Mission({}: Props) {
   return (

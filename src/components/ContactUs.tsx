@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from '@/styles/ContactUs.module.css';
-import Image from 'next/image';
 
 const ContactUs: React.FC = () => {
   return (
@@ -10,7 +9,7 @@ const ContactUs: React.FC = () => {
           <BorderBeam direction="leftToRight" />
           <div className={styles.ctaInner}>
             <div className={styles.ctaInnerContent}>
-              <h3 className={styles.title}>Let's build the future of payments</h3>
+              <h3 className={styles.title}>Let&apos;s build the future of payments</h3>
               <p className={styles.subtitle}>Book a demo with one of our experts</p>
             </div>
             <a href="/contact-us" className={styles.ctaButton}>

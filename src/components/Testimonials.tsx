@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import { Card, CardContent, CardHeader, CardFooter } from "@/components/ui/card";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
@@ -41,7 +40,7 @@ const Testimonials: React.FC = () => {
                 </Avatar>
               </CardHeader>
               <CardContent>
-                <p className="text-gray-600 dark:text-gray-300 italic">"{testimonial.quote}"</p>
+                <p className="text-gray-600 dark:text-gray-300 italic">&quot;{testimonial.quote}&quot;</p>
               </CardContent>
               <CardFooter>
                 <div>

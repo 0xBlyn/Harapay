@@ -67,32 +67,6 @@ const Hero: React.FC = () => {
     </section>
   );
 };
-
-const PhoneMockup: React.FC = () => {
-  return (
-    <div className="relative">
-      <Card className="w-[300px] h-[600px] mx-auto bg-gray-900 border-gray-800 overflow-hidden">
-        <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-40 h-6 bg-black rounded-b-3xl"></div>
-        <div className="p-4">
-          <div className="text-sm text-gray-500 mb-2">9:41</div>
-          <div className="text-lg font-semibold mb-4">Harapay</div>
-          <div className="space-y-4">
-            <Card className="bg-blue-100 p-3">
-              <div className="text-sm font-medium text-blue-800">Complete quests, win rewards!</div>
-            </Card>
-            <Card className="bg-green-100 p-3">
-              <div className="text-sm font-medium text-green-800">Daily challenge: Engage with community</div>
-            </Card>
-            <Card className="bg-gray-100 p-3">
-              <div className="text-sm font-medium">Your rewards: 500 tokens</div>
-            </Card>
-          </div>
-        </div>
-      </Card>
-    </div>
-  );
-};
-
 const FloatingCircles: React.FC = () => {
   return (
     <>
