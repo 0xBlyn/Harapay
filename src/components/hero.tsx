@@ -8,8 +8,8 @@ import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
-    <section className="text-gray-900 px-[5%] py-5 min-h-screen relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+    <section className="text-gray-900 px-[5%] lg:px-[8%] mt-[10%] lg:mt-0 py-5 lg:min-h-screen max-h-[100vh] relative overflow-hidden">
+      <div className="max-w-7xl mx-auto relative z-10">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <motion.div 
             className="lg:w-[40vw] mb-10 lg:mb-0"
@@ -17,13 +17,13 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <h1 className="text-5xl leading-tight font-bold mb-6">
-            Harapay: Your trusted mobile money partner
+            <h1 className="lg:text-4xl text-center md:text-left text-3xl leading-tight font-bold mb-3 lg:mb-6">
+              Harapay: Your trusted mobile money partner
             </h1>
-            <p className="text-xl mb-6 text-gray-600">
-              Bridging The Gap Between Blockchain and Traditional Services in Africa. We provide financial service through USSD, low costs on transaction fees and seemless integration into your local banks.
+            <p className="lg:text-lg text-center md:text-left text-base mb-6 text-gray-600">
+              Bridging The Gap Between Blockchain and Traditional Services in Africa. We provide financial service through USSD, low costs on transaction fees and seamless integration into your local banks.
             </p>
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 w-full items-center lg:justify-start justify-center">
               <Link href="/login" className="px-4 py-2 rounded-full bg-brand text-white hover:bg-brand/80 text-center flex items-center justify-center space-x-2">
                 <Video className="h-5 w-5" />
                 <span>Live Demo</span>
@@ -35,18 +35,18 @@ const Hero: React.FC = () => {
             </div>
           </motion.div>
           <motion.div 
-            className=" relative w-full lg:w-[40vw] h-[calc(100vh-80px)] overflow-hidden"
+            className="relative w-full lg:w-[40vw] h-[calc(100vh-50vh)] lg:h-[calc(100vh-80px)] overflow-hidden"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             <Image 
-        src="/images/mockup.png" 
-          alt="Harapay" 
-      layout="fill"
-      objectFit="contain"
-      className="w-full h-auto"
-    />
+              src="/images/mockup.png" 
+              alt="Harapay" 
+              layout="fill"
+              objectFit="contain"
+              className="w-full h-auto"
+            />
           </motion.div>
         </div>
       </div>
@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1 }}
       >
-        <div className="absolute bottom-10 flex flex-col items-center">
+        <div className="absolute bottom-10 flex flex-col items-center mt-[5%] lg:mt-0">
           <svg className="w-6 h-6 mb-2 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>

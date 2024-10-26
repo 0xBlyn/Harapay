@@ -22,8 +22,8 @@ const teamData: TeamProps = {
     {
       name: "FREDRICK",
       role: "Project Manager",
-      bio: "A leader in project management and UI/UX development, with 5+ years experience.",
-      image: "/images/fredrick.jpg"
+      bio: "A project management leader with 5+ years in UI/UX development.",
+      image: "/images/hakan.jpeg"
     },
     {
       name: "BLYN",
@@ -41,13 +41,13 @@ const teamData: TeamProps = {
       name: "DARREN",
       role: "Financial Analyst",
       bio: "Expert in finance, economics, automation, and analysis.",
-      image: "/images/darren.jpg"
+      image: "/images/hakan.jpeg"
     },
     {
       name: "HAKAN",
       role: "Backend Developer",
       bio: "Backend developer, focused on the integration of backend technologies.",
-      image: "/images/hakan.jpg"
+      image: "/images/hakan.jpeg"
     }
   ]
 };
@@ -66,11 +66,11 @@ const Team: React.FC = () => {
                 <Image 
                   src={member.image} 
                   alt={`${member.name}'s profile picture`}
-                  width={280}
+                  width={300}
                   height={160}
                                />
               </div>
-              <div className='px-4 pb-5 '>
+              <div className='px-4 py-5'>
                 <h3 className='text-lg font-semibold'>{member.name}</h3>
                 <p className='text-base '>{member.role}</p>
                 <p className='text-sm text-gray-500 pt-5'>{member.bio}</p>
