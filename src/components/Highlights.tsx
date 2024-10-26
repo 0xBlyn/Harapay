@@ -43,11 +43,11 @@ function Highlights() {
   return (
     <section className="bg-black text-white py-12 rounded-[30px] mx-[1%]">
       <div className="container mx-auto px-[4%]">
-        <h2 className="text-4xl font-bold mb-2 text-center">HIGHLIGHTS</h2>
-        <p className="text-center text-b mb-12 max-w-3xl mx-auto">
+        <h2 className="text-2xl lg:text-4xl font-bold mb-2 text-center">HIGHLIGHTS</h2>
+        <p className="text-center mb-12 max-w-3xl mx-auto">
           Explore why our product stands out: adaptability, durability, and innovation. Enjoy reliable customer support and precision in every detail.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-8">
           {highlightItems.map((item, index) => (
             <div key={index} className="bg-[#090E10] p-6 rounded-lg border border-[#131b20]">
               <div className="mb-[3%] w-[30px] h-[30px]">

@@ -26,12 +26,12 @@ const testimonials = [
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="py-12 px-[5%] bg-gray-50 dark:bg-gray-800 rounded-[50px]">
+    <section className="py-12 lg:px-[5%] bg-gray-50 dark:bg-gray-800 rounded-[50px]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center mb-9">
+        <h2 className="text-2xl lg:text-4xl font-bold text-center mb-9">
           Hear from our partners
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-4 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="bg-white dark:bg-gray-700 shadow-lg">
               <CardHeader>

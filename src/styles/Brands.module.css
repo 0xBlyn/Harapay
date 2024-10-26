@@ -21,7 +21,7 @@
 
 .image_container {
   display: flex;
-  animation: scroll 20s linear infinite;
+  animation: scroll 5s linear infinite;
   align-items: center;
 }
 
@@ -37,5 +37,14 @@
 .logo_wrapper {
   flex: 0 0 auto;
   width: 150px;
-  margin-right: 20px;
 }
+@media (max-width: 640px) { 
+  .logo_wrapper {
+    width: 100px;
+    margin-right: 5px;
+  }
+}
+.brand_logo {
+  max-width: 120px !important;
+  height: auto;
+} 

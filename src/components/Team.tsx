@@ -68,12 +68,13 @@ const Team: React.FC = () => {
                   alt={`${member.name}'s profile picture`}
                   width={300}
                   height={160}
+                  className={styles.memberImage}
                                />
               </div>
               <div className='px-4 py-5'>
                 <h3 className='text-lg font-semibold'>{member.name}</h3>
                 <p className='text-base '>{member.role}</p>
-                <p className='text-sm text-gray-500 pt-5'>{member.bio}</p>
+                <p className='text-sm text-gray-500 lg:pt-5'>{member.bio}</p>
               </div>
             </div>
           ))}

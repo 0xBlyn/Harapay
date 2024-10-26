@@ -26,6 +26,7 @@ const BlockchainLogos: React.FC = () => {
                 layout="responsive"
                 width={100}
                 height={50}
+                className={styles.brand_logo}
               />
             </div>
           ))}

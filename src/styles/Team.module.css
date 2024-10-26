@@ -65,4 +65,7 @@
   .teamGrid {
     grid-template-columns: 1fr;
   }
+  .memberImage {
+    min-width: 100%;
+  }
 }

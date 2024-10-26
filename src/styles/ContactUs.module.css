@@ -5,37 +5,37 @@
     overflow: hidden;
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
-  }
-  
-  .container {
+    padding: 2rem 1rem; /* Added default padding for smaller screens */
+}
+
+.container {
     margin: 0 auto;
-  }
-  
-  .ctaContainer {
+}
+
+.ctaContainer {
     position: relative;
     border-radius: 1rem;
     padding: 2% 1rem;
-  }
-  
-  .ctaInner {
+}
+
+.ctaInner {
     position: relative;
     z-index: 10;
     text-align: center;
-  }
-  
-  .title {
+}
+
+.title {
     font-size: 16px;
     font-weight: 600;
-  
-  }
-  
-  .subtitle {
+}
+
+.subtitle {
     color: #a0aec0;
     margin-bottom: 4%;
     font-size: 1rem;
-  }
-  
-  .ctaButton {
+}
+
+.ctaButton {
     display: inline-block;
     background-color: #9E1F64;
     color: #fff;
@@ -45,169 +45,169 @@
     text-decoration: none;
     transition: background-color 0.3s ease;
     font-size: 0.875rem;
-  }
-  
-  .ctaButton:hover {
+}
+
+.ctaButton:hover {
     background-color: #7a1850;
-  }
-  
-  .lineHorizontalWrap {
+}
+
+.lineHorizontalWrap {
     position: absolute;
     left: 0;
     right: 0;
     height: 1px;
-  }
-  
-  .lineHorizontalWrap.top {
+}
+
+.lineHorizontalWrap.top {
     top: 0;
-  }
-  
-  .lineHorizontalWrap.bottom {
+}
+
+.lineHorizontalWrap.bottom {
     bottom: 0;
-  }
-  
-  .horizontalLine {
+}
+
+.horizontalLine {
     position: absolute;
     height: 1px;
     background-color: rgba(158, 31, 100, 0.3);
-  }
-  
-  .hLeft, .hRight {
+}
+
+.hLeft, .hRight {
     width: calc(50% - 1rem);
-  }
-  
-  .hLeft {
+}
+
+.hLeft {
     left: 0;
-  }
-  
-  .hRight {
+}
+
+.hRight {
     right: 0;
-  }
-  
-  .hExtLeft, .hExtRight {
+}
+
+.hExtLeft, .hExtRight {
     width: 25%;
     opacity: 0.7;
-  }
-  
-  .hExtLeft {
+}
+
+.hExtLeft {
     left: -25%;
     background: linear-gradient(to right, transparent, rgba(158, 31, 100, 0.3));
-  }
-  
-  .hExtRight {
+}
+
+.hExtRight {
     right: -25%;
     background: linear-gradient(to left, transparent, rgba(158, 31, 100, 0.3));
-  }
-  
-  .dot {
+}
+
+.dot {
     position: absolute;
     width: 6px;
     height: 6px;
     border-radius: 50%;
     background-color: rgba(158, 31, 100, 0.5);
     top: -3px;
-  }
-  
-  .isLeft {
+}
+
+.isLeft {
     left: 0;
-  }
-  
-  .isRight {
+}
+
+.isRight {
     right: 0;
-  }
-  
-  .isCenter {
+}
+
+.isCenter {
     left: 50%;
     transform: translateX(-50%);
-  }
-  
-  .verticalLine {
+}
+
+.verticalLine {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 1px;
-  }
-  
-  .ctaLineMovingLeft, .ctaLineMovingRight {
+}
+
+.ctaLineMovingLeft, .ctaLineMovingRight {
     position: absolute;
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, transparent, #9E1F64, transparent);
     animation: moveVertical 3s linear infinite;
-  }
-  
-  .blur {
+}
+
+.blur {
     filter: blur(3px);
-  }
-  
-  .lineExtremityWrap {
+}
+
+.lineExtremityWrap {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-  }
-  
-  .topLeft, .topRight, .topCenter, .bottomLeft, .bottomRight, .bottomCenter {
+}
+
+.topLeft, .topRight, .topCenter, .bottomLeft, .bottomRight, .bottomCenter {
     position: absolute;
     width: 2px;
     height: 2rem;
     background: linear-gradient(to bottom, rgba(158, 31, 100, 0.3), transparent);
-  }
-  
-  .bottomLeft, .bottomRight, .bottomCenter {
+}
+
+.bottomLeft, .bottomRight, .bottomCenter {
     bottom: 0;
     background: linear-gradient(to top, rgba(158, 31, 100, 0.3), transparent);
-  }
-  
-  .topLeft, .bottomLeft {
+}
+
+.topLeft, .bottomLeft {
     left: 0;
-  }
-  
-  .topRight, .bottomRight {
+}
+
+.topRight, .bottomRight {
     right: 0;
-  }
-  
-  .topCenter, .bottomCenter {
+}
+
+.topCenter, .bottomCenter {
     left: 50%;
-  }
-  
-  .ctaShape {
+}
+
+.ctaShape {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  .ctaCircle {
+}
+
+.ctaCircle {
     width: 300px;
     height: 300px;
     border-radius: 50%;
     border: 1px solid rgba(158, 31, 100, 0.3);
     animation: rotate 20s linear infinite;
-  }
-  
-  .ctaShapeInner {
+}
+
+.ctaShapeInner {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-  }
-  
-  .ctaShapeItem {
+}
+
+.ctaShapeItem {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
-  
-  .onrampDotWrap {
+}
+
+.onrampDotWrap {
     width: 100%;
     height: 100%;
-  }
-  
-  .ctaShapeItemAnimation {
+}
+
+.ctaShapeItemAnimation {
     position: absolute;
     top: 0;
     left: 0;
@@ -216,79 +216,106 @@
     border: 1px solid rgba(158, 31, 100, 0.3);
     border-radius: 50%;
     animation: pulse 2s ease-out infinite;
-  }
-  
-  .leftToRight .horizontalLine {
+}
+
+.leftToRight .horizontalLine {
     animation: moveHorizontalLeftToRight 3s linear infinite;
-  }
-  
-  .rightToLeft .horizontalLine {
+}
+
+.rightToLeft .horizontalLine {
     animation: moveHorizontalRightToLeft 3s linear infinite;
-  }
-  
-  @keyframes moveVertical {
+}
+
+@keyframes moveVertical {
     0% { transform: translateY(-100%); }
     100% { transform: translateY(100%); }
-  }
-  
-  @keyframes moveHorizontalLeftToRight {
+}
+
+@keyframes moveHorizontalLeftToRight {
     0% { transform: translateX(-100%); }
     100% { transform: translateX(100%); }
-  }
-  
-  @keyframes moveHorizontalRightToLeft {
+}
+
+@keyframes moveHorizontalRightToLeft {
     0% { transform: translateX(100%); }
     100% { transform: translateX(-100%); }
-  }
-  
-  @keyframes rotate {
+}
+
+@keyframes rotate {
     0% { transform: translate(-50%, -50%) rotate(0deg); }
     100% { transform: translate(-50%, -50%) rotate(360deg); }
-  }
-  
-  @keyframes pulse {
+}
+
+@keyframes pulse {
     0% { transform: scale(0.95); opacity: 1; }
     50% { transform: scale(1.05); opacity: 0.5; }
     100% { transform: scale(0.95); opacity: 1; }
-  }
-  
-  @media (min-width: 640px) {
+}
+
+@media (max-width: 639px) { /* Media query for smaller screens */
     .contactSection {
-      padding: 6rem 2rem;
+        padding: 5% 1%; /* Adjusted padding for smaller screens */
+    }
+
+    .ctaContainer {
+        padding: 4rem 1rem; /* Adjusted padding for smaller screens */
+    }
+
+    .ctaInner {
+        padding: 5% 2%;
+    }
+
+    .title {
+        font-size: 1.5rem; /* Adjusted font size for smaller screens */
+    }
+
+    .subtitle {
+        font-size: 1rem; /* Adjusted font size for smaller screens */
+    }
+
+    .ctaButton {
+        padding: 0.5rem 1rem; /* Adjusted padding for smaller screens */
+        font-size: 0.875rem; /* Adjusted font size for smaller screens */
+    }
+}
+
+@media (min-width: 640px) {
+    .contactSection {
+        padding: 6rem 2rem;
     }
     
     .ctaContainer {
-      padding: 6rem 2rem;
+        padding: 6rem 2rem;
     }
     
     .title {
-      font-size: 2rem;
+        font-size: 2rem;
     }
     
     .subtitle {
-      font-size: 1.25rem;
+        font-size: 1.25rem;
     }
     
     .ctaButton {
-      padding: 0.7rem 1.6rem;
-      font-size: 1rem;
+        padding: 0.7rem 1.6rem;
+        font-size: 1rem;
     }
-  }
-  
-  @media (min-width: 1024px) {
+}
+
+@media (min-width: 1024px) {
     .contactSection {
-      padding: 8rem 2rem;
+        padding: 8rem 2rem;
     }
     
     .ctaContainer {
-      padding: 8rem 4rem;
+        padding: 8rem 4rem;
     }
     
     .title {
-      font-size: 2.5rem;
+        font-size: 2.5rem;
     }
     
     .subtitle {
-      font-size: 1.5rem;
+        font-size: 1.5rem;
     }
-  }
+}

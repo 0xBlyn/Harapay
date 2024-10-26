@@ -8,9 +8,9 @@ import Image from 'next/image';
 
 const Hero: React.FC = () => {
   return (
-    <section className="text-gray-900 px-[5%] lg:px-[8%] mt-[10%] lg:mt-0 py-5 lg:min-h-screen max-h-[100vh] relative overflow-hidden">
+    <section className="text-gray-900 px-[5%] lg:px-[8%] -mt-[10%] lg:-mt-0 py-5 min-h-screen relative overflow-hidden">
       <div className="max-w-7xl mx-auto relative z-10">
-        <div className="flex flex-col lg:flex-row items-center justify-between">
+        <div className="flex flex-col-reverse lg:flex-row items-center justify-between">
           <motion.div 
             className="lg:w-[40vw] mb-10 lg:mb-0"
             initial={{ opacity: 0, y: 20 }}
@@ -52,12 +52,12 @@ const Hero: React.FC = () => {
       </div>
       <FloatingCircles />
       <motion.div 
-        className="absolute inset-0 flex flex-col items-center justify-center text-gray-500 text-center pointer-events-none"
+        className="absolute inset-0 flex flex-col items-center justify-center text-gray-500 text-center pointer-events-none" // Adjusted margin-top for smaller screens
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 1 }}
       >
-        <div className="absolute bottom-10 flex flex-col items-center mt-[5%] lg:mt-0">
+        <div className="absolute bottom-[5vh] lg:bottom-10 flex flex-col items-center">
           <svg className="w-6 h-6 mb-2 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
           </svg>

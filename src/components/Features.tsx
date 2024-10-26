@@ -4,15 +4,15 @@ import styles from '@/styles/Features.module.css';
 
 const Features: React.FC = () => {
   return (
-    <div className='px-[10%] flex justify-between items-center bg-[#f9fafb] py-[5%] rounded-[50px]'>
+    <div className='lg:px-[10%] px-[5%] flex flex-col lg:flex-row justify-between items-center bg-[#f9fafb] py-[5%] rounded-[50px]'>
       <div className={styles.product_container}>
-      <div className={styles.product}>
-        <div>
-          <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ViewQuiltRoundedIcon"><path d="M21 6v4.5c0 .55-.45 1-1 1h-9.67c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1H20c.55 0 1 .45 1 1m-6.33 12v-4.5c0-.55-.45-1-1-1h-3.33c-.55 0-1 .45-1 1V18c0 .55.45 1 1 1h3.33c.55 0 1-.45 1-1m1-4.5V18c0 .55.45 1 1 1H20c.55 0 1-.45 1-1v-4.5c0-.55-.45-1-1-1h-3.33c-.56 0-1 .45-1 1M8.33 18V6c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h3.33c.56 0 1-.45 1-1" fill="#9e1f64"></path></svg>
-        </div>
-        <div className="pt-1">
-          <p className={styles.title}>Wallet</p>
-          <p className={styles.description}>A USSD-based Crypto wallet management system which enables token transactions.</p>
+        <div className={styles.product}>
+          <div>
+            <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ViewQuiltRoundedIcon"><path d="M21 6v4.5c0 .55-.45 1-1 1h-9.67c-.55 0-1-.45-1-1V6c0-.55.45-1 1-1H20c.55 0 1 .45 1 1m-6.33 12v-4.5c0-.55-.45-1-1-1h-3.33c-.55 0-1 .45-1 1V18c0 .55.45 1 1 1h3.33c.55 0 1-.45 1-1m1-4.5V18c0 .55.45 1 1 1H20c.55 0 1-.45 1-1v-4.5c0-.55-.45-1-1-1h-3.33c-.56 0-1 .45-1 1M8.33 18V6c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v12c0 .55.45 1 1 1h3.33c.56 0 1-.45 1-1" fill="#9e1f64"></path></svg>
+          </div>
+          <div className="pt-1">
+            <p className={styles.title}>Wallet</p>
+            <p className={styles.description}>A USSD-based Crypto wallet management system which enables token transactions.</p>
             <a className="flex items-center text-brand text-sm font-semibold"><span>Learn more</span>
               <svg focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="ChevronRightRoundedIcon"><path d="M9.29 6.71c-.39.39-.39 1.02 0 1.41L13.17 12l-3.88 3.88c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l4.59-4.59c.39-.39.39-1.02 0-1.41L10.7 6.7c-.38-.38-1.02-.38-1.41.01" fill="#9e1f64"></path>
               </svg>
@@ -46,7 +46,7 @@ const Features: React.FC = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className='py-[5%] lg:py-0'>
         <Image className='rounded-xl' src="/images/soon.png" alt="onramp" width={600} height={500} />
       </div>
     </div>
