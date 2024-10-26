@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
             <Link href="/" className="flex items-center mb-4">
               <Image 
                 src="/images/logo.png" 
-                alt="MyXspend" 
+                alt="Harapay" 
                 width={32} 
                 height={32} 
                 className="mr-2"
@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
               <span className="text-xl font-semibold">Harapay</span>
             </Link>
             <p className="text-sm text-gray-400">
-              Copyright 2024, MyXspend. All rights reserved.
+              Copyright 2024, HArapay. All rights reserved.
             </p>
           </div>
 
